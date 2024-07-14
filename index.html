@@ -5,84 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>May's Personal Webpage</title>
     <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #fff0f5; /* Baby Pink background */
-        color: #333;
-    }
-    header {
-        background-color: #ffb6c1; /* Light Pink header */
-        color: white;
-        padding: 10px 0;
-        text-align: center;
-    }
-    .container {
-        width: 80%;
-        margin: 0 auto;
-        padding: 20px 0;
-    }
-    .about, .blog, .contact {
-        margin-bottom: 40px;
-    }
-    h2 {
-        border-bottom: 2px solid #ffb6c1; /* Light Pink border bottom for headings */
-        padding-bottom: 10px;
-    }
-    .blog-post {
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
-    }
-    .contact-form {
-        display: flex;
-        flex-direction: column;
-    }
-    .contact-form input, .contact-form textarea {
-        padding: 10px;
-        margin-bottom: 10px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-    }
-    .contact-form button {
-        padding: 10px;
-        background-color: #ffb6c1; /* Light Pink button background */
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-</style>
-
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff0f5; /* Baby Pink background */
+            color: #333;
+        }
+        header {
+            background-color: #ffb6c1; /* Light Pink header */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            padding: 10px;
+            background-color: #ffb6c1; /* Light Pink button background */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Welcome to May's World</h1>
     </header>
     <div class="container">
-        <section class="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm May, an INFP 4w5 with a passion for self-reflection and growth. I love fashion, reading, journaling, and everything pink. My favorite book is "The Perks of Being a Wallflower" because of its character-driven narrative. I highly value my morals and ethics and strive to get better every day. Welcome to my little corner of the internet!</p>
-        </section>
-        <section class="blog">
-            <h2>Blog</h2>
-            <div class="blog-post">
-                <h3>My Journey of Self-Reflection</h3>
-                <p>Posted on July 14, 2024</p>
-                <p>Self-reflection is a crucial part of personal growth. I've been journaling regularly and it's amazing to see how much I've evolved over the years. Here are some of the key things I've learned...</p>
-            </div>
-            <div class="blog-post">
-                <h3>Favorite Fashion Trends of 2024</h3>
-                <p>Posted on June 20, 2024</p>
-                <p>Fashion is an ever-evolving world, and 2024 has brought some exciting trends. From pastel colors to vintage revivals, here are my top picks...</p>
-            </div>
-        </section>
         <section class="contact">
             <h2>Contact Me</h2>
-            <form class="contact-form">
+            <form class="contact-form" action="https://formspree.io/3josw3@gmail.com" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="3josw3@gmail.com" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
                 <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                 <button type="submit">Send</button>
             </form>
